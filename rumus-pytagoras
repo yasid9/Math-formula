@@ -1,0 +1,20 @@
+<tr>Tinggi a</tr><td><input id="angka" type="number" /></td>
+    <tr>alas b</tr><input id="angka2" type="number" />
+    <input onclick="bagi()" type="button" value="hasil" />
+<br>
+
+    
+    <br />
+    <h1 id="Rumus pitagoras"></h1>
+    <script type="text/javascript">
+      
+        function bagi(){
+            var a1 = document.getElementById('angka').value;
+            var a2 = document.getElementById('angka2').value;
+            var hsl = Math.sqrt(Math.pow(a1, 2)+Math.pow(a2, 2));
+            
+            console.log(hsl);
+            document.getElementById('Rumus pitagoras').innerHTML = hsl;
+        }
+        
+    </script>
