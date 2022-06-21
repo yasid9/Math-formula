@@ -1,0 +1,32 @@
+<h1>Rumus Diagonal Bidang Persegi</h1>
+  
+ <form name="kalkulator">
+        <tr>sisi <td>:</td><input type="number" name="yasid1"><br /></tr><tr></tr>
+        Akar<td>:</td> <input type="text" name="yasid2" Value="2"><br />
+        Hasil<td>:</td><input type="number" name="hasil" disabled="true">
+        <input type="button" value="Hasil" onClick="persegi()">
+        <input type="button" value="Kosongkan" onClick="kosong()">
+  </form>
+    
+
+        <script type="text/JavaScript">
+            function persegi()
+            {
+                a=eval(kalkulator.yasid1.value);
+                b=eval(kalkulator.yasid2.value);
+                c= a*(Math.sqrt(b)); 
+                kalkulator.hasil.value = c;
+            }
+            function kosong()
+            {
+                kalkulator.yasid1.focus();
+                kalkulator.yasid1.value="";
+                kalkulator.yasid2.value="";
+                kalkulator.hasil.value="";
+            }
+
+        
+            
+        </script>
+    
+
