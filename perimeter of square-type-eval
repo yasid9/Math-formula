@@ -2,8 +2,8 @@
   
  <form name="kalkulator">
         <tr>sisi a<td>:</td><input type="number" name="yasid1" value="4"><br /></tr><tr></tr>
-        sisi b<td>:</td> <input type="number" name="yasid2"><br />
-        sisi c <td>:</td><input type="number" name="hasil" disabled="true">
+        sisi 1<td>:</td> <input type="number" name="yasid2"><br />
+        keliling <td>:</td><input type="number" name="hasil" disabled="true">
         <input type="button" value=" Hasil " onClick="Pytagoras()">
         <input type="button" value="Kosongkan" onClick="kosong()">
   </form>
