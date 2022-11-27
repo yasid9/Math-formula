@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="segipanjang">
+        Sis a&nbsp; &nbsp; &nbsp;:<input name="yasid1" style="border: 2px solid rgb(58, 176, 255); margin-bottom: 10px; margin: 8px 0 solid-blue; overflow: hidden; padding: 10px; width: 20%;" type="number" /><br />	
+        sisi b&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:<input name="yasid2" style="border: 2px solid rgb(58, 176, 255); margin-bottom: 10px; margin: 8px 0 solid-blue; overflow: hidden; padding: 10px; width: 20%;" type="number" /><br />
+        <input onclick="sin0()" style="border: 2px solid rgb(58, 176, 255); margin-bottom: 10px; margin: 8px 0 solid-blue; overflow: hidden; padding: 10px; width: automatc;" type="button" value="Sin 0" />
+        <input onclick="sin30()" style="border: 2px solid rgb(58, 176, 255); margin-bottom: 10px; margin: 8px 0 solid-blue; overflow: hidden; padding: 10px; width: automatc;" type="button" value="Sin 30" />
+        <input onclick="sin45()" style="border: 2px solid rgb(58, 176, 255); margin-bottom: 10px; margin: 8px 0 solid-blue; overflow: hidden; padding: 10px; width: automatc;" type="button" value="Sin 45" />
+        <input onclick="sin60()" style="border: 2px solid rgb(58, 176, 255); margin-bottom: 10px; margin: 8px 0 solid-blue; overflow: hidden; padding: 10px; width: automatc;" type="button" value="Sin 60" />
+        <input onclick="sin90()" style="border: 2px solid rgb(58, 176, 255); margin-bottom: 10px; margin: 8px 0 solid-blue; overflow: hidden; padding: 10px; width: automatc;" type="button" value="Sin 90" />
+        <input onclick="sin120()" style="border: 2px solid rgb(58, 176, 255); margin-bottom: 10px; margin: 8px 0 solid-blue; overflow: hidden; padding: 10px; width: automatc;" type="button" value="Sin 120" />
+   <br />
+   <br />
+        Nilai layang-layang&nbsp; &nbsp;:<input disabled="true" name="hasil" style="border: 2px solid rgb(58, 176, 255); margin-bottom: 10px; margin: 8px 0 solid-blue; overflow: hidden; padding: 10px; width: automatc;" type="number" />
+        <input onclick="reset()" style="border: 2px solid rgb(58, 176, 255); margin-bottom: 10px; margin: 8px 0 solid-blue; overflow: hidden; padding: 10px; width: automatc;" type="button" value="hapus" /><br /><br />
+</form>
+    
+
+        <script type="text/JavaScript">
+            function sin0()
+            {
+              	a=eval(segipanjang.yasid1.value);
+              	b=eval(segipanjang.yasid2.value);
+                c= a*b*Math.sin(0).toFixed(2);
+                segipanjang.hasil.value = c;
+            }
+            function sin30()
+            {
+              	a=eval(segipanjang.yasid1.value);
+              	b=eval(segipanjang.yasid2.value);
+                c= a*b*Math.sin(Math.PI/6).toFixed(2);
+                segipanjang.hasil.value = c;
+            }
+            function sin45()
+            {
+              	a=eval(segipanjang.yasid1.value);
+              	b=eval(segipanjang.yasid2.value);
+                c= a*b*Math.sin(Math.PI/4).toFixed(2);
+                segipanjang.hasil.value = c;
+            }
+
+            function sin45()
+            {
+              	a=eval(segipanjang.yasid1.value);
+              	b=eval(segipanjang.yasid2.value);
+                c= a*b*Math.sin(Math.PI/4).toFixed(2);
+                segipanjang.hasil.value = c;
+            }
+            function sin60()
+            {
+              	a=eval(segipanjang.yasid1.value);
+              	b=eval(segipanjang.yasid2.value);
+                c= a*b*Math.sin(Math.PI/3).toFixed(2);
+                segipanjang.hasil.value = c;
+            }
+            function sin90()
+            {
+              	a=eval(segipanjang.yasid1.value);
+              	b=eval(segipanjang.yasid2.value);
+                c= a*b*Math.sin(Math.PI/2).toFixed(2);
+                segipanjang.hasil.value = c;
+            }
+            function sin120()
+            {
+              	a=eval(segipanjang.yasid1.value);
+              	b=eval(segipanjang.yasid2.value);
+                c= a*b*Math.sin(3/2*Math.PI).toFixed(2);
+                segipanjang.hasil.value = c;
+            }
+          
+          function resetForm(){
+document.form1.reset();
+          
+            }
+        </script><p></p>
+
+</body>
+</html>
